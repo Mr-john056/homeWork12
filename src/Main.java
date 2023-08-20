@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-
-            System.out.println("i = " + i);
-        }
+        Author author = new Author("Александр", "Пушкин");
+        Book book = new Book("Пушкин", "Русалка",1832);
+        String authorName = book.getAuthorName();
+        System.out.println(author.getName());
     }
 }
+
