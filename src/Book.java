@@ -3,27 +3,26 @@ public class Book {
     Author bookName;
     int publishingYear;
 
+    public Book(Author authorName, Author bookName, int publishingYear){
+        this.authorName = authorName;
+        this.bookName = bookName;
+        this.publishingYear = publishingYear;
 
-    public Book(Author authorName, Author bookName, int PublishingYear) {
-    this.authorName = authorName;
-    this.bookName = bookName;
-    this.publishingYear = publishingYear;
     }
-
-    public Author getAuthorName() {
-
+    private Author getAuthorName() {
         return authorName;
     }
 
-    public Author getBookName() {
+    private Author getBookName() {
+
         return bookName;
     }
 
-    public int getPublishingYear() {
+    private int getPublishingYear() {
         return publishingYear;
     }
 
-    public void setPublishingYear(int publishingYear) {
+    private void setPublishingYear(int publishingYear) {
         this.publishingYear = publishingYear;
     }
 }
