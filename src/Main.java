@@ -1,10 +1,15 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Author pushkin = new Author("Александр", "Пушкин");
+        Author tolstoy = new Author("Лев", "Толстой");
+        Book book = new Book(pushkin, "Русалка", 1832);
+        Book book1 = new Book(tolstoy, "Война и мир", 1893);
+        System.out.println(book);
 
-        for (int i = 1; i <= 5; i++) {
-
-            System.out.println("i = " + i);
-        }
+        System.out.println(book1);
+        book.setPublishingYear(1932);
+        System.out.println(book);
     }
+
 }
