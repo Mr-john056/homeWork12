@@ -1,28 +1,36 @@
 public class Book {
-    Author authorName;
-    Author bookName;
-    int publishingYear;
+    private Author authorName;
+    private String bookName;
+    private int publishingYear;
 
-    public Book(Author authorName, Author bookName, int publishingYear){
+    public Book(Author authorName, String bookName, int publishingYear) {
         this.authorName = authorName;
         this.bookName = bookName;
         this.publishingYear = publishingYear;
 
     }
-    private Author getAuthorName() {
+
+    public Author getAuthorName() {
+
         return authorName;
     }
 
-    private Author getBookName() {
+    public String getBookName() {
 
         return bookName;
     }
 
-    private int getPublishingYear() {
+    @Override
+    public String toString() {
+        return "Книга " + this.getBookName() + " Автор " + this.getAuthorName() + " Год " + publishingYear;
+    }
+
+    public int getPublishingYear() {
         return publishingYear;
     }
 
-    private void setPublishingYear(int publishingYear) {
+    public void setPublishingYear(int publishingYear) {
+
         this.publishingYear = publishingYear;
     }
 }
